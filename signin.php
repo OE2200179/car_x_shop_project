@@ -13,7 +13,7 @@ if (isset($_SESSION["login"])) {
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $user = $_POST["user"];
     $pass = $_POST["pass"];
-    $query = ("SELECT  `Username`,  `Password`  FROM `users` WHERE Username =Username AND Password = Password ");
+    $query = ("SELECT * FROM `users` WHERE `Username` = '$user'AND Password = '$pass'");
 
     $conection =  mysqli_connect("localhost", "root", "", "car_x_shop");
     mysqli_query($conection, $query);
