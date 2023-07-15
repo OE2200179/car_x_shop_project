@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jul 08, 2023 at 08:54 PM
+-- Generation Time: Jul 15, 2023 at 10:51 PM
 -- Server version: 10.4.24-MariaDB
 -- PHP Version: 8.1.6
 
@@ -63,19 +63,17 @@ CREATE TABLE `users` (
   `Name` varchar(255) NOT NULL,
   `Username` varchar(255) NOT NULL,
   `Email` varchar(255) NOT NULL,
-  `Password` varchar(255) NOT NULL,
-  `Image` varchar(255) NOT NULL
+  `Password` varchar(255) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
 -- Dumping data for table `users`
 --
 
-INSERT INTO `users` (`ID`, `Name`, `Username`, `Email`, `Password`, `Image`) VALUES
-(12, 'Omar Mahmoud', ' Mahmoud@34', ' mahmoud.omar@324.com', '12345', ''),
-(13, 'omar', ' omar', ' omar@hhh', '12345', ''),
-(14, 'mohamed', ' mosalah', ' mohamedsalah78912@gmail.com', '12345', ''),
-(15, 'Karim Sami', ' karim23', ' sami.karim@436.com', 'Sami32', '');
+INSERT INTO `users` (`ID`, `Name`, `Username`, `Email`, `Password`) VALUES
+(16, 'osman', 'omar11', 'omar@osman.com', '12345'),
+(17, 'osman osman', ' osman11', ' mohamedsalah78912@gmail.com', '12345'),
+(18, 'mohamed', ' mosalah11', ' mohamedsalahwebdev@gmail.com', '12345');
 
 --
 -- Indexes for dumped tables
@@ -107,7 +105,7 @@ ALTER TABLE `car_info`
 -- AUTO_INCREMENT for table `users`
 --
 ALTER TABLE `users`
-  MODIFY `ID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=16;
+  MODIFY `ID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=19;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
