@@ -13,9 +13,9 @@
         $name = $_POST["name"];
         $password = $_POST["pass"];
         $email = $_POST["email"];
-        $img = $_POST["img"];
+        
         $conect = mysqli_connect("localhost", "root", "", "car_x_shop");
-        mysqli_query($conect, "INSERT INTO `users`( `Name`, `Username`, `Email`, `Password` ,`Image`) VALUES ('$name',' $username',' $email','$password','$img' ) ");
+        mysqli_query($conect, "INSERT INTO `users`( `Name`, `Username`, `Email`, `Password` ) VALUES ('$name',' $username',' $email','$password' ) ");
         $_SESSION["login"] = $username;
         header("location: signin.php");
     }
